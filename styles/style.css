@@ -65,8 +65,8 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.tour-description{
-    margin-right: 60px;
+.tour-description {
+  margin-right: 60px;
 }
 .tour-description h2 {
   font-size: 50px;
@@ -81,8 +81,130 @@ body {
   border-radius: 5px;
   margin: 20px 0px;
   border: none;
-
 }
+
+/* Destination section  */
+
+.title-destination {
+  text-align: center;
+}
+.title-destination h1 {
+  font-size: 60px;
+}
+.title-destination p {
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.new-destination,
+.third-destination {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  position: relative;
+}
+.new-destination .new-position {
+  position: absolute;
+  bottom: 150px;
+  left: 250px;
+  color: white;
+}
+.new-destination .new-position2 {
+  color: white;
+  position: absolute;
+  bottom: 150px;
+  right: 300px;
+}
+.new-destination img {
+  width: 100%;
+}
+
+.second-destination {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  position: relative;
+}
+.second-destination .new-position3 {
+  position: absolute;
+  bottom: 130px;
+  left: 190px;
+  color: white;
+}
+.second-destination .new-position4 {
+  position: absolute;
+  bottom: 130px;
+  color: white;
+  left: 600px;
+}
+
+.second-destination .new-position5 {
+  position: absolute;
+  color: white;
+  bottom: 140px;
+  right: 200px;
+}
+
+.second-destination img {
+  width: 100%;
+  height: 320px;
+}
+
+.third-destination .ima-1 {
+  height: 320px;
+  width: 530px;
+}
+.third-destination .new-position6 {
+  position: absolute;
+  bottom: 120px;
+  left: 160px;
+  color: white;
+}
+.third-destination .new-position7 {
+  position: absolute;
+  color: white;
+  bottom: 120px;
+  right: 300px;
+}
+.third-destination .img-2 {
+  height: 320px;
+  width: 850px;
+}
+
+/* choose-title */
+.choose-us {
+  position: relative;
+}
+.choose-title {
+  width: 600px;
+  height: 90px;
+  margin: 0 auto;
+}
+.choose-title h1 {
+  text-align: center;
+  font-size: 40px;
+}
+.choose-container {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  border: 0px;
+}
+.choose-description {
+    margin-left: 20px;
+}
+.description {
+  position: relative;
+  background-color: #f7f1ea;
+  height: 250px;
+  width: 620px;
+  top: 30px;
+  left: 370px;
+  border: 0;
+  border-radius: 20px;
+}
+
+/* Destination section mobile devise  */
 
 /* for mobile devise menu*/
 @media screen and (max-width: 572px) {
@@ -96,21 +218,47 @@ body {
 }
 
 /* banner section mobile devise */
-@media screen and (max-width) {
+@media screen and (max-width-572) {
   .form-style {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 
 /* popular section mobile device */
-@media screen and (max-width:572px){
-.popular-tour{
+@media screen and (max-width: 572px) {
+  .popular-tour {
     flex-direction: column;
-}
-.tour-images img{
+  }
+  .tour-images img {
     max-width: 100%;
-    height: auto;
-
+   
+  }
 }
 
+/* destination */
+@media screen and (max-width: 572px) {
+  .destination > div {
+    grid-template-columns: 1fr;
+  }
+  .img-2 {
+    width: 100%;
+  }
+}
+
+/* choose-container for mobile devise */
+@media screen and (max-width:572px) {
+    .choose-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .description{
+    position:relative;
+    left: 0px;
+    width: 100%;
+
+    }
+    .choose-title{
+        width: 100%;
+      
+    }
 }
